@@ -4,7 +4,7 @@ import volunteers from './volunteers/index.js';
 
 router.use('/volunteers', volunteers);
 router.get('/', (req, res) => {
-  res.send('Hello API!');
+  res.json({ message: 'Hello API!' });
 });
 
 export default router;
